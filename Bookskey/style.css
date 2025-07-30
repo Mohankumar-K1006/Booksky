@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+}
+.navbar{
+    background-color: #fd6569;
+    text-align: center;
+    padding: 15px;
+}
+.container{
+    padding: 10px;
+}
+.book-container{
+    padding: 20px;
+    width: 25%;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    margin: 30px;
+   display: inline-block;
+   vertical-align: top;
+}
+.book-container h2{
+    color: #fd6569;
+}
+.book-container button{
+    background-color: #fd6569;
+    color: black;
+    border-radius: 15px;
+    padding: 5px 5px 10px 10px;
+    margin-top: 10px;
+    border: none;
+}
+.addbutton{
+    background-color: #fd6569;
+    color: black;
+    border-radius: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 40px;
+    border: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    
+}
+.popupoverlay{
+    background-color: black;
+    opacity: 0.8;
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: none;
+}
+.popupbox{
+    background-color: #fd6569;
+    width: 40%;
+    padding: 40px;
+    border-radius: 15px;
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    z-index: 2;
+    display: none;
+}
+.popupbox input,textarea{
+    background: transparent;
+    border: none;
+    width: 100%;
+    border-bottom: solid black 2px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+}
+.popupbox input::placeholder,textarea::placeholder
+{
+ color: black
+}
+.popupbox button{
+    background-color: black;
+    color: white;
+    width: 30%;
+    padding: 5px;
+    border: none;
+    margin: 5px;
+}
+.popupbox input:focus,textarea:focus{
+    outline: none;
+}
+button:hover{
+    cursor:pointer;
+}
+#del:hover,#cancelbook:hover{
+    background-color: red;
+}
+#addbook:hover,.addbutton:hover{
+    background-color:green;
+}
